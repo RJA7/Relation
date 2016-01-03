@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans">
+    <bean class="sql.dao.DaoPool" id="daoPool"/>
+    <bean class="sql.dao.DaoStatic" id="daoStatic"/>
+</beans>
