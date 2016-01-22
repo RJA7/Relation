@@ -1,11 +1,4 @@
 <%@ page import="sql.beans.RelationBean" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: RJA
-  Date: 12/17/2015
-  Time: 4:20 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,7 +8,8 @@
     <script src="motion.js"></script>
 </head>
 <body>
-<% String[] messages = new String[10];
+<% 
+  String[] messages = new String[10];
   for (int i = 0; i < messages.length; i++) {
     messages[i] = ((RelationBean) request.getAttribute(String.valueOf(i))).getMessage();
   }
